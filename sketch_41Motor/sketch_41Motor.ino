@@ -6,6 +6,8 @@ void setup() {
   // initialize digital pin as an output.
   pinMode(motor1A, OUTPUT);
   pinMode(motor2A, OUTPUT);  
+  Serial.begin(115200); // Initialize serial communication at 115200 baud rate
+
 }
 
 // the loop function runs over and over again forever
@@ -14,6 +16,7 @@ void loop() {
   // Rotate
   digitalWrite(motor1A, HIGH);     
   digitalWrite(motor2A, LOW);   
+  Serial.println("rotate");
   delay(2000); 
 
   // Rotate in the opposite direction
