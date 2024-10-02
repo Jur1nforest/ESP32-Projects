@@ -29,4 +29,3 @@ void loop() {
   digitalWrite(motor2A, LOW);    
   delay(3000);
 }
-
